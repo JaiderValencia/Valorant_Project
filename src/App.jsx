@@ -8,7 +8,7 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path='/agentes'>
+        <Route path='/agentes' />
       </Routes>
     </>
   )
