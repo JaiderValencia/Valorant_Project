@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Card from '../Card/Card'
 import './Carousel.css'
 import PropTypes from 'prop-types'
+import Loader from '../Loader/Loader'
 
 function Carousel(props) {
     const [data, setData] = useState([])
@@ -26,7 +27,9 @@ function Carousel(props) {
     return (
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
-                {content}
+                {data.length > 0 ? (
+                    content
+                ) : <Loader />}
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
