@@ -1,0 +1,55 @@
+.cards-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.card-agent {
+    box-sizing: border-box;
+    width: calc(100/3);
+    border: 1px solid #FF4655;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: transparent;
+    overflow: hidden;
+}
+
+.card-agent p.card-agent-nombre {
+    position: absolute;
+}
+
+.card-agent .card-agent-imagen img {
+    object-fit: cover;
+}
+
+.card-agent .card-agent-imagen {
+    width: 100%;
+    height: 100%;
+}
+
+.card-agent:hover {
+    border: 1px solid white;
+    box-shadow: 0 0 51px 11px rgb(255 46 46);
+    color: #ECE8E1;
+}
+
+.card-agent:active {
+    transform: scale(0.95) rotateZ(2deg);
+}
