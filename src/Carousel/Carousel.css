@@ -15,7 +15,6 @@
 
 .card-agent {
     box-sizing: border-box;
-    width: calc(100/3);
     border: 1px solid #FF4655;
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
     border-radius: 17px;
