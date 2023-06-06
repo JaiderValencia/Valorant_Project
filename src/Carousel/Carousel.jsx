@@ -1,26 +1,27 @@
 import { useEffect, useState } from 'react'
 import Card from '../Card/Card'
 import './Carousel.css'
+import PropTypes from 'prop-types'
 
-function Carousel() {
-    const [agents, setAgents] = useState([])
+function Carousel(props) {
+    const [data, setData] = useState([])
 
     const [content, setContent] = useState([])
 
     useEffect(() => {
-        fetch("https://valorant-api.com/v1/agents?language=es-ES")
+        fetch(props.endpoint)
             .then(res => res.json())
-            .then(data => setAgents(data.data))
-            .catch((e) => setAgents([]))
+            .then(data => setData(data.data))
+            .catch((e) => setData([]))
     }, [])
 
     useEffect(() => {
-        setContent(agents.map((agent, i) => (
+        setContent(data.map((agent, i) => (
             <div key={i} className={`carousel-item ${i == 0 ? "active" : ""} `}>
                 <Card name={agent.displayName} image={agent.displayIcon} />
             </div>
         )))
-    }, [agents])
+    }, [data])
 
     return (
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
@@ -37,6 +38,10 @@ function Carousel() {
             </button>
         </div>
     )
+}
+
+Carousel.propTypes = {
+    endpoint: PropTypes.string.isRequired
 }
 
 export default Carousel
