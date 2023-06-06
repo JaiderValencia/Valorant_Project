@@ -11,21 +11,7 @@ function Carousel() {
                         <Card />
                         <Card />
                     </div>
-                </div>
-                <div className="carousel-item">
-                    <div className="cards-wrapper">
-                        <Card />
-                        <Card />
-                        <Card />
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <div className="cards-wrapper">
-                        <Card />
-                        <Card />
-                        <Card />
-                    </div>
-                </div>
+                </div>                
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>

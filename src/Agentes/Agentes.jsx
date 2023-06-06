@@ -4,7 +4,13 @@ import './Agentes.css'
 
 function Agentes() {
     return (
-        <Carousel />
+        <main className='main-agents'>
+            <div className="agents-info-page">
+                <h1>Agentes</h1>
+                <p>Aquí podras ver cada uno de los agentes del juego, clickea para saber más sobre ellos.</p>
+            </div>
+            <Carousel />
+        </main>
     )
 }
 
