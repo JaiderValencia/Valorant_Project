@@ -1,18 +1,24 @@
 import './Card.css'
+import PropTypes from 'prop-types'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-function Card() {
+function Card(props) {
     return (
         <div className="card-agent">
             <div className="card-agent-imagen">
-                <LazyLoadImage width="100%" effect='blur' height="100%" src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/displayicon.png" alt={`imagen`} />
+                <LazyLoadImage width="100%" effect='blur' height="100%" src={props.image} alt={`${props.name} - imagen`} />
             </div>
             <p className='card-agent-nombre'>
-                Geeko
+                {props.name}
             </p>
         </div>
     )
+}
+
+Card.propTypes = {
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired
 }
 
 export default Card
