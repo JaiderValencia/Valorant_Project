@@ -1,8 +1,5 @@
-.cards-wrapper {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+.carousel-item {
+    padding: 0 10px;
 }
 
 .carousel-inner {
