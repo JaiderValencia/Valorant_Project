@@ -5,11 +5,11 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Card(props) {
     return (
-        <div className="card-agent">
-            <div className="card-agent-imagen">
+        <div className="card-data">
+            <div className="card-data-imagen">
                 <LazyLoadImage width="100%" effect='blur' height="100%" src={props.image} alt={`${props.name} - imagen`} />
             </div>
-            <p className='card-agent-nombre'>
+            <p className='card-data-nombre'>
                 {props.name}
             </p>
         </div>

@@ -6,7 +6,7 @@
     padding: 20px 69px;
 }
 
-.card-agent {
+.card-data {
     box-sizing: border-box;
     border: 1px solid #FF4655;
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
@@ -23,25 +23,25 @@
     overflow: hidden;
 }
 
-.card-agent p.card-agent-nombre {
+.card-data p.card-data-nombre {
     position: absolute;
 }
 
-.card-agent .card-agent-imagen img {
+.card-data .card-data-imagen img {
     object-fit: cover;
 }
 
-.card-agent .card-agent-imagen {
+.card-data .card-data-imagen {
     width: 100%;
     height: 100%;
 }
 
-.card-agent:hover {
+.card-data:hover {
     border: 1px solid white;
     box-shadow: 0 0 18px 0px rgb(255 46 46);
     color: #ECE8E1;
 }
 
-.card-agent:active {
+.card-data:active {
     transform: scale(0.95) rotateZ(2deg);
 }
