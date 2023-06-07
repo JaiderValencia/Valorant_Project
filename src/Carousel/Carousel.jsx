@@ -17,9 +17,9 @@ function Carousel(props) {
     }, [])
 
     useEffect(() => {
-        setContent(data.map((agent, i) => (
+        setContent(data.map((data, i) => (
             <div key={i} className={`carousel-item ${i == 0 ? "active" : ""} `}>
-                <Card name={agent.displayName} image={agent.displayIcon} />
+                <Card name={data.displayName} image={props.splash ? data.splash : data.displayIcon} />
             </div>
         )))
     }, [data])
@@ -44,7 +44,8 @@ function Carousel(props) {
 }
 
 Carousel.propTypes = {
-    endpoint: PropTypes.string.isRequired
+    endpoint: PropTypes.string.isRequired,
+    splash: PropTypes.bool
 }
 
 export default Carousel

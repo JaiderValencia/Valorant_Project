@@ -1,8 +1,16 @@
+import Carousel from '../Carousel/Carousel'
 import './Maps.css'
+
 
 function Maps() {
     return (
-        <h1>Soy el map</h1>
+        <main className='main-maps'>
+            <div className="maps-info-page">
+                <h1>Mapas</h1>
+                <p>Aquí podras ver cada uno de los mapas del juego, clickea para saber más sobre ellos.</p>
+            </div>
+            <Carousel splash={true} endpoint="https://valorant-api.com/v1/maps?language=es-ES" />
+        </main>
     )
 }
 
