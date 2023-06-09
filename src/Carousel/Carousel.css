@@ -48,3 +48,11 @@
 .card-data:active {
     transform: scale(0.95) rotateZ(2deg);
 }
+
+@media (min-width: 769px) {
+    .carousel{
+        width: 50%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
