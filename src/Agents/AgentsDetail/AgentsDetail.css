@@ -1,0 +1,46 @@
+main.agent-detail {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+div.name {
+    text-align: center;
+}
+
+div.description,
+div.role-description,
+ul.abilities-list li {
+    text-align: justify;
+}
+
+ul.abilities-list li {
+    margin: 25px 0;
+}
+
+div.role-img {
+    width: 2.5em;
+}
+
+div.role-title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+@media (min-width: 1024px) {
+    main.agent-detail {
+        flex-direction: row;
+    }
+}
