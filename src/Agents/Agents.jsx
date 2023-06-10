@@ -1,5 +1,5 @@
 import Carousel from '../Carousel/Carousel'
-import './Agentes.css'
+import './Agents.css'
 
 
 function Agentes() {

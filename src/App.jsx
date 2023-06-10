@@ -1,6 +1,6 @@
 import './App.css'
 import NavBar from './NavBar/NavBar'
-import Agentes from './Agentes/Agentes'
+import Agents from './Agents/Agents'
 import Maps from './Maps/Maps'
 import { Routes, Route } from 'react-router-dom'
 
@@ -11,7 +11,7 @@ function App() {
 
 
       <Routes>
-        <Route path='/agentes' element={<Agentes />} />
+        <Route path='/agentes' element={<Agents />} />
         <Route path='/mapas' element={<Maps />} />
       </Routes>
     </>
