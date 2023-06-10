@@ -21,10 +21,10 @@ function NavBar() {
                             <Link className="nav-link" to="/">Inicio</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/agentes">Agentes</Link>
+                            <Link className="nav-link" to="/agents">Agentes</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/mapas">Mapas</Link>
+                            <Link className="nav-link" to="/maps">Mapas</Link>
                         </li>
                     </ul>
                 </div>
