@@ -1,6 +1,6 @@
 import Carousel from '../Carousel/Carousel'
 import './Maps.css'
-
+import EndPoints from '../EndPoints'
 
 function Maps() {
     return (
@@ -9,7 +9,7 @@ function Maps() {
                 <h1>Mapas</h1>
                 <p>Aquí podras ver cada uno de los mapas del juego, clickea para saber más sobre ellos.</p>
             </div>
-            <Carousel splash={true} endpoint="https://valorant-api.com/v1/maps?language=es-ES" />
+            <Carousel splash={true} endpoint={EndPoints.maps} />
         </main>
     )
 }

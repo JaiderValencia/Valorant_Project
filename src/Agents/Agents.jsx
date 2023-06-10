@@ -1,6 +1,6 @@
 import Carousel from '../Carousel/Carousel'
 import './Agents.css'
-
+import EndPoints from '../EndPoints'
 
 function Agentes() {
     return (
@@ -9,7 +9,7 @@ function Agentes() {
                 <h1>Agentes</h1>
                 <p>Aquí podras ver cada uno de los agentes del juego, clickea para saber más sobre ellos.</p>
             </div>
-            <Carousel endpoint="https://valorant-api.com/v1/agents?language=es-ES" />
+            <Carousel endpoint={EndPoints.agents} />
         </main>
     )
 }
