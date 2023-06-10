@@ -3,6 +3,7 @@ import Card from '../Card/Card'
 import './Carousel.css'
 import PropTypes from 'prop-types'
 import Loader from '../Loader/Loader'
+import { Link } from 'react-router-dom'
 
 function Carousel(props) {
     const [data, setData] = useState([])
@@ -18,9 +19,11 @@ function Carousel(props) {
 
     useEffect(() => {
         setContent(data.map((data, i) => (
-            <div key={i} className={`carousel-item ${i == 0 ? "active" : ""} `}>
-                <Card name={data.displayName} image={props.splash ? data.splash : data.displayIcon} />
-            </div>
+            <Link key={i} to={`./${data.uuid}`}>
+                <div className={`carousel-item ${i == 0 ? "active" : ""} `}>
+                    <Card name={data.displayName} image={props.splash ? data.splash : data.displayIcon} />
+                </div>
+            </Link>
         )))
     }, [data])
 
