@@ -11,8 +11,8 @@ function App() {
 
 
       <Routes>
-        <Route path='/agentes' element={<Agents />} />
-        <Route path='/mapas' element={<Maps />} />
+        <Route path='/agents' element={<Agents />} />
+        <Route path='/maps' element={<Maps />} />
       </Routes>
     </>
   )
