@@ -21,8 +21,8 @@ function AgentsDetail() {
         <main className="agent-detail">
             {agent ? (
                 <>
-                    <div className="agent-img">
-                        <img src={agent.fullPortraitV2} alt={`${agent.displayName} - image`} />
+                    <div className="agent-img-container">
+                        <img className="agent-img" src={agent.fullPortraitV2} alt={`${agent.displayName} - image`} />
                     </div>
 
                     <div className="agent-info">
