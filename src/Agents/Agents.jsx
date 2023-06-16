@@ -9,7 +9,7 @@ function Agentes() {
                 <h1>Agentes</h1>
                 <p>Aquí podras ver cada uno de los agentes del juego, clickea para saber más sobre ellos.</p>
             </div>
-            <Carousel endpoint={EndPoints.agents} />
+            <Carousel endpoint={`${EndPoints.agents}?isPlayableCharacter=true`} />
         </main>
     )
 }
